@@ -1,4 +1,4 @@
-export default  abstract class Race {
+export default abstract class Race {
     private _name: string;
     private _dexterity: number
 
@@ -8,11 +8,12 @@ export default  abstract class Race {
         this._name = name
         this._dexterity = dexterity;
     }
+    
     get name(): string {
         return this._name;
       }
     
-      get dexterity(): number {
+    get dexterity(): number {
         return this._dexterity;
       }
     
@@ -21,4 +22,5 @@ export default  abstract class Race {
       }
     
     abstract get maxLifePoints(): number;
+
     }
